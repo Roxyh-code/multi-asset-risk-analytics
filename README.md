@@ -1,10 +1,11 @@
 # Multi-Asset Risk & Volatility Analytics
 
-A self-contained quantitative risk toolkit covering four areas I worked on during a
-markets risk/investment-analytics internship: **market risk (VaR)**, **volatility
-derivatives & systematic vol strategies**, **interest rate factor risk**, and
-**institutional portfolio risk reporting**. Everything here is rebuilt from scratch
-on public data so it's fully reproducible by a reader with no data subscription.
+A self-contained quantitative risk project covering four areas of markets risk and
+investment analytics: **market risk (VaR)**, **volatility derivatives & systematic
+vol strategies**, **interest rate factor risk**, and **institutional portfolio risk
+reporting**. Built independently, end to end, on public data only — no proprietary
+data, vendor feeds, or employer materials of any kind — so it's fully reproducible
+by a reader with no data subscription.
 
 Each module is a standalone, runnable Python script with its own methodology
 docstring, saved tables, and charts — read the code, not just the results.
