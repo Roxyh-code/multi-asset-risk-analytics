@@ -1,0 +1,15 @@
+Regime,Contract,Days to Expiry,Synthetic Index
+Calm / Contango,Spot (30D CM),30,15.009391742291731
+Calm / Contango,F1,58,17.446853926574516
+Calm / Contango,F2,86,19.801144780341
+Calm / Contango,F3,114,21.44864055992995
+Calm / Contango,F4,142,22.55917362934453
+Calm / Contango,F5,170,23.386211815837644
+Calm / Contango,F6,198,24.00188288626483
+Stressed / Backwardation,Spot (30D CM),30,33.83957145945671
+Stressed / Backwardation,F1,58,33.9044301748545
+Stressed / Backwardation,F2,86,30.627344266934802
+Stressed / Backwardation,F3,114,26.818344943497635
+Stressed / Backwardation,F4,142,22.89370553844245
+Stressed / Backwardation,F5,170,18.9265638297642
+Stressed / Backwardation,F6,198,14.470727241497952

@@ -1,0 +1,10 @@
+ID,Description,Asset Class,Type,Exposure ($),Exposure (% AUM)
+ES1,"Equity Index Future (ES-style, S&P 500)",Equity,Equity Future,11600000.0,4.64
+SPXC1,"SPX 1M 2% OTM Call (short, covered overlay)",Equity,Equity Option,-20301397.518716007,-8.120559007486403
+VX1,"VIX Future (1M, long vol hedge)",Equity Vol,VIX Future,2775000.0,1.11
+VARSW1,"SPX 1Y Variance Swap (long, strike 16 vol)",Equity Vol,Variance Swap,57802.1978021978,0.02312087912087912
+ZN1,"10Y Note Future (short, rate hedge)",Rates,Bond Future,-68705.88235294117,-0.027482352941176468
+IRS1,"USD 5Y Receiver IRS, $30mm notional",Rates,IRS,170588.23529411765,0.06823529411764706
+CDX1,"CDX.NA.IG 5Y, sell protection $15mm",Credit,CDX,-15000000.0,-6.0
+FXF1,"EUR/USD 3M Forward, long EUR20mm",FX,FX Forward,21600000.0,8.64
+CL1,"WTI Crude Future (long, 60 contracts)",Commodity,Commodity Future,4680000.0,1.872

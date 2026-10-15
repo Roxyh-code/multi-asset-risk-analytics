@@ -1,0 +1,5 @@
+Scenario,Window,SPX % Move,VIX % Move,Scenario Option Price,PnL ($)
+Dot-com Bubble Burst,2000-03-10 to 2002-10-09,-44.32,98.35,0.0,-15268.32
+Global Financial Crisis,2008-09-15 to 2009-03-09,-43.28,56.72,0.0,-15268.32
+COVID-19 Crash,2020-02-20 to 2020-03-23,-33.67,295.82,5.5363,-14714.69
+"Aug 5, 2024 Vol Shock",2024-08-02 to 2024-08-05,-3.0,64.9,141.9113,-1077.2

@@ -1,0 +1,4 @@
+Method,1-Day 99% VaR ($)
+Historical Simulation (full reprice),6274.07
+Delta-Gamma-Vega Approximation,5345.32
+"Analytic Parametric (closed-form, Delta+Vega)",7346.76

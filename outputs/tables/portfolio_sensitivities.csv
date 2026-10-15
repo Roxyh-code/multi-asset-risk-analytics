@@ -1,0 +1,10 @@
+ID,Asset Class,Type,Delta ($/1%),Gamma ($/1%^2),Vega ($/vol pt),Theta ($/day),DV01 ($/bp),CS01 ($/bp)
+ES1,Equity,Equity Future,116000.0,0.0,0.0,0.0,0.0,0.0
+SPXC1,Equity,Equity Option,-203013.97518716007,-53526.20564697454,-61591.798278710456,16699.88908664343,0.0,0.0
+VX1,Equity Vol,VIX Future,0.0,0.0,150000.0,0.0,0.0,0.0
+VARSW1,Equity Vol,Variance Swap,0.0,0.0,57802.1978021978,0.0,0.0,0.0
+ZN1,Rates,Bond Future,0.0,0.0,0.0,0.0,-5840.0,0.0
+IRS1,Rates,IRS,0.0,0.0,0.0,0.0,14500.0,0.0
+CDX1,Credit,CDX,0.0,0.0,0.0,0.0,0.0,-7250.0
+FXF1,FX,FX Forward,216000.0,0.0,0.0,0.0,0.0,0.0
+CL1,Commodity,Commodity Future,46800.0,0.0,0.0,0.0,0.0,0.0
