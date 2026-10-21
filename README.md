@@ -3,12 +3,12 @@
 A self-contained quantitative risk project covering four areas of markets risk and
 investment analytics: **market risk (VaR)**, **volatility derivatives & systematic
 vol strategies**, **interest rate factor risk**, and **institutional portfolio risk
-reporting**. Built independently, end to end, on public data only — no proprietary
-data, vendor feeds, or employer materials of any kind — so it's fully reproducible
-by a reader with no data subscription.
+reporting**. This project is inspired by my previous experience in financial risk 
+management and independently developed to showcase my knowledge and interests
+in risk analytics.
 
 Each module is a standalone, runnable Python script with its own methodology
-docstring, saved tables, and charts — read the code, not just the results.
+docstring, saved tables, and charts.
 
 ```
 src/
