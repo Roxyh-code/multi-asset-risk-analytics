@@ -43,6 +43,21 @@ AUM = 250_000_000.0
 VALUATION_DATE = pd.Timestamp("2026-09-30")
 RATE = 0.043
 
+# Benchmark for 10Y-equivalent rate exposure: DV01 of $1mm face of the
+# on-the-run 10Y Treasury, i.e. ~$850 per bp (modified duration ~8.5).
+TEN_YEAR_DV01_PER_MM = 850.0
+
+
+def _ten_year_equivalent(dv01: float) -> float:
+    """Face amount of 10Y Treasuries with the same DV01 as the position.
+
+    10Y-equivalent = DV01 / (10Y DV01 per $1 of face)
+                   = DV01 / (TEN_YEAR_DV01_PER_MM / 1_000_000)
+    which is the same as Open Protocol's 10,000 * DV01 / D_10Y, because a
+    near-par bond's DV01 per $1 of face is D_10Y / 10,000.
+    """
+    return dv01 / TEN_YEAR_DV01_PER_MM * 1_000_000
+
 
 def build_synthetic_portfolio() -> list[dict]:
     """A made-up 9-position multi-asset book spanning Equity, Rates, Credit,
@@ -146,10 +161,10 @@ def build_exposure_table(portfolio: list[dict]) -> pd.DataFrame:
         elif t == "Variance Swap":
             exposure = _var_swap_aged_vega_notional(pos)
         elif t == "Bond Future":
-            exposure, _ = _bond_future_value(pos)
-            exposure = exposure * 10_000 / 850.0  # 10Y-equivalent, using an $850/bp-per-$1mm 10Y benchmark DV01
+            dv01_total, _ = _bond_future_value(pos)
+            exposure = _ten_year_equivalent(dv01_total)
         elif t == "IRS":
-            exposure = pos["dv01"] * 10_000 / 850.0
+            exposure = _ten_year_equivalent(pos["dv01"])
         elif t == "CDX":
             exposure = pos["notional_usd"]
         elif t == "FX Forward":
