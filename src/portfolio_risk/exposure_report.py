@@ -117,7 +117,10 @@ def _irs_value(pos: dict, rate_shock_bps: float = 0.0) -> float:
 
 
 def _cdx_value(pos: dict, spread_shock_bps: float = 0.0) -> float:
-    return -pos["cs01"] * spread_shock_bps
+    """PnL for a spread shock. CS01 is stored as PnL per +1bp of spread widening
+    (negative for sold protection, matching the sensitivity table), so a
+    widening shock loses money for a protection seller."""
+    return pos["cs01"] * spread_shock_bps
 
 
 def _fx_forward_exposure_usd(pos: dict, usd_shock: float = 0.0) -> float:
